@@ -1,3 +1,10 @@
+# 类型 `turquoise::OStr`
+* **定义**
+  ```cpp
+  template<class T>
+  using OStr = const T*;
+  ```
+* > 原始串
 # 类： `turquoise::Str`
 * > 记录特定数据类型的一组串
 * > 位于`turquoise/Str.hpp`
@@ -5,8 +12,8 @@
 * > `class T`: 特定数据类型
 * > `Allocator`: (可选): 满足c++标准的allocator， 默认使用std::allocator
 ## 构造
-* > `Str(const T*)`: 用常数组构造, 最后一位是NULL
-* >`Str(std::initalizer_list<const T*>)`: 拼接一组常数组（同上）构造
+* > `Str(OStr<T>)`: 用常数组构造, 最后一位是NULL
+* >`Str(std::initalizer_list<OStr<T>>)`: 拼接一组常数组（同上）构造
 * > `Str(int)`： 用长度构造
 ## 方法
 * > `int length()`： 获取长度
