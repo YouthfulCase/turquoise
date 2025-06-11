@@ -18,12 +18,13 @@
 ## 方法
 * > `int length()`： 获取长度
 * > `T* data`: 获取原始指针
-* > `加法运算符`：返回两者拼接结果，按先后顺序
+* > `加法运算符+`：返回两者拼接结果，按先后顺序
+* > `赋值运算符=(左值)`：拷贝
 * > `[]`: 获取指定下标位置的元素引用
 ## 示例
 ```cpp
 // 示例： 拼接出Hello world!
-#include "turquoise/Str.hpp"
+#include "turquoise.h"
 #include <iostream>
 using namespace turquoise;
 
