@@ -14,7 +14,7 @@
    * `toConsole` 是否打印到控制台
 ## 测试（同步）
 ```cpp
-// 添加一万条信息为try的日志
+// 添加一万条信息为50字节的日志
 #include "turquoise.h"
 using namespace turquoise;
 
